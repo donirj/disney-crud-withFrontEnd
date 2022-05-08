@@ -1,0 +1,30 @@
+<div class="updatebox">
+    <div class="updatebox2">
+        <button class="button1">
+            <a  class="links" href="/movies/list">Back</a>
+        </button>
+        
+        <h2 class="lists">Update your movie</h2>
+        <ul class="lists">
+        <img class="pic1" src={{img}} alt="fotografia">
+        <h2>{{title}}</h2>
+        <p>date: {{date}}</p>
+        <p>Rating: {{rate}}</p>
+        </ul>
+    </div>
+    <br><br>
+
+    <form class="formedit" action="/movies/{{id}}/edit" method="POST">
+
+        <input class="input1" type="text" name="name" id="label-name" value="{{title}}">
+        <br><br>
+        <input  class="input1" type="number" name="date" id="label-date" value="{{date}}">
+        <br><br>
+        <label for="label-weigth">Rate</label>
+        <input class="input1" type="number" name="rate" id="label-rate" value="{{rate}}">
+        <br><br>
+        <label for="label-speed">Image</label>
+        <input class="input1" type="text" name="img" id="label-img" value="{{img}}">
+        <button class="button1" type="submit">Update</button>
+    </form>
+</div>

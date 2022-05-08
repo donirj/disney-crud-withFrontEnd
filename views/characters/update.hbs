@@ -1,0 +1,39 @@
+<button class="button1">
+    <a  class="links" href="/characters/list">Back</a>
+</button>
+<button class="button1">
+    <a  class="links" href="/">Home</a>
+</button>
+
+<div class="updatebox">
+    <div class="updatebox2">
+        <h2 class="lists">Update your character</h2>
+        <img class="pic1" src={{img}} alt="fotografia">
+        <ul class="lists">
+        <h2>{{name}}</h2>
+        <p>Age: {{age}}</p>
+        <p>Weigth: {{weigth}}</p>
+        <p>History: {{history}}</p>
+        <p>Movies: {{movies}}</p>
+        </ul>
+    </div>
+    <br><br>
+
+    <form class="formedit" action="/characters/{{id}}/edit" method="POST">
+        <input class="input1" type="text" name="name" id="label-name" value="{{name}}">
+        <br><br>
+        <input class="input1" type="number" name="age" id="label-age" value="{{age}}">
+        <br><br>
+        <input class="input1" type="number" name="weigth" id="label-weigth" value="{{weigth}}">
+        <br><br>
+        <label for="label-image">Image</label>
+        <input  class="input1" type="text" name="img" id="label-img" value="{{img}}">
+        <br><br>
+        <label for="label-history">History</label>
+        <input class="input2" type="text" name="history" id="label-history" value="{{history}}">
+        <br><br>
+        <label for="label-movies">Movies</label>
+        <input class="input2" type="text" name="movies" id="label-history" value="{{history}}">
+        <button class="button1" type="submit">Update</button>
+    </form>
+</div>
