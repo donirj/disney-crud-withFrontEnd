@@ -1,7 +1,7 @@
-installs
+run project:
 
-npm init --yes
-npm i mongoose hbs dotenv express
-npm run seed
+1. open terminal
 
-ruta formulario /posts/create
+2. run: npm run start
+
+3. open localhost:3000 in your web browser
